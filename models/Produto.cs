@@ -7,7 +7,7 @@ namespace MVC_CONSOLE.models
     {
         public int Codigo { get; set; }
         public string Nome { get; set; }
-        public float Preço { get; set; }
+        public float Preco { get; set; }
 
         private const string PATH = "Database/Produto.csv";
 
@@ -33,7 +33,7 @@ namespace MVC_CONSOLE.models
 
                 produtoNovo.Codigo = int.Parse(atributos[0]);
                 produtoNovo.Nome = atributos[1];
-                produtoNovo.Preço = float.Parse(atributos[2]);
+                produtoNovo.Preco = float.Parse(atributos[2]);
 
                 produtos.Add(produtoNovo);
             }

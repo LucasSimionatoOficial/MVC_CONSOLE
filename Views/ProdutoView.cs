@@ -9,9 +9,9 @@ namespace MVC_CONSOLE.Views
         public void Listar(List<Produto> produtos){
             foreach (var item in produtos)
             {
-                Console.WriteLine($"Text");
-                Console.WriteLine($"Text");
-                Console.WriteLine($"Text");
+                Console.WriteLine($"Codigo: {item.Codigo}");
+                Console.WriteLine($"Produto: {item.Nome}");
+                Console.WriteLine($"Preço: {item.Preco}");
             }
         }
     }
