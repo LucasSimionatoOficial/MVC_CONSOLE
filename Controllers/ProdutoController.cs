@@ -10,5 +10,8 @@ namespace MVC_CONSOLE.Controllers
         public void ListarProdutos(){
             produtoView.Listar(produto.Ler());
         }
+        public void Cadastrar(){
+            produto.Inserir(produtoView.CadastrarProduto());
+        }
     }
 }
